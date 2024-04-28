@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-tROA4n4JiGy4vSDV7lL8XmdoVZ51Ob3n0aBU1G03fFb5i5H5e1v5VnEoCIfRglivno2SPD1wcn0ihrNHoymlfA=="
+        crossorigin="anonymous" />
+        <style>
+            body {
+                background-image: url("https://img.freepik.com/free-vector/circles-background-dark-tones_60389-166.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">
+            <span style="color: #7433ff;">Password </span>
+            <span style="color: #7433ff;">Generator </span>
+        </h1>
+        <script src="script.js"></script>
+        <div class="form-group text-center">
+            <label for="passwordLength">Password Length: <span id="passwordLengthText">5</span></label>
+            <input type="range" class="form-control-range" id="passwordLength" min="1" max="20" value="5" />
+        </div>
+
+        <div class="form-group text-center">
+            <label>Character Types:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="uppercaseCheckbox" checked />
+                <label class="form-check-label" for="uppercaseCheckbox">
+                    Uppercase
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="lowercaseCheckbox" checked />
+                <label class="form-check-label" for="lowercaseCheckbox">
+                    Lowercase
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="symbolsCheckbox" checked />
+                <label class="form-check-label" for="symbolsCheckbox">
+                    Symbols
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="numbersCheckbox" checked />
+                <label class="form-check-label" for="numbersCheckbox">
+                    Numbers
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group text-center">
+            <button type="button" id="generateButton" class="btn btn-primary">
+                Generate Password
+            </button>
+            <button type="button" id="copyButton" class="btn btn-secondary">
+                Copy Password
+            </button>
+        </div>
+
+        <div class="form-group text-center">
+            <label for="password"> Password:</label>
+            <input type="text" class="form-control" id="password" readonly />
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
+

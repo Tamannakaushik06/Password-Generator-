@@ -1,0 +1,116 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: #1a1a1a; /* Changed background color */
+    color: #f0f0f0; /* Changed font color */
+    line-height: 1.6; /* Added line-height */
+}
+
+h1 {
+    text-transform: uppercase;
+    padding-top: 100px;
+    font-size: 36px; /* Increased font size */
+    font-weight: 600;
+    color: #dbdbdb;
+    text-align: center; /* Centered text */
+}
+
+h1 span {
+    color: #bfbfbf; /* Changed color for span */
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(32, 2, 200), rgb(32, 2, 200), rgb(32, 2, 200));
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #dbd8e3;
+    cursor: pointer;
+}
+
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#passwordLengthText {
+    font-size: 20px;
+    font-weight: 600;
+    color: #dbd8e3;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.form-check-input:checked {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.form-check-input:checked::before {
+    color: #c80000;
+}
+
+.form-check-input:checked::after {
+    color: rgb(17, 157, 17);
+}
+
+#generateButton {
+    margin-right: 10px;
+    background-color: #181423;
+    border: 1.5px solid #fff;
+    font-weight: 500;
+    color: #fff;
+}
+
+#generateButton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#copyButton {
+    background-color: #181423;
+    border: 1.5px solid #dbd8e3;
+    font-weight: 500;
+    color: #fff;
+}
+
+#copyButton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#password {
+    font-size: 26px;
+    background-color: #181423;
+    color: #fff;
+    font-weight: 500;
+    border: 1.5px solid #dbd8e3;
+}
+
+
